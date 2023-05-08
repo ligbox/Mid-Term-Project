@@ -1,49 +1,178 @@
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
     margin: 0;
-    padding: 0;
+  }
+  /*.container {
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+  }*/
+  
+  /* 프로필 이미지 */
+  .img {
+    justify-content: center;
+  }
+  #porfile-img {
+  width: 150px;
+  height: 150px;
+  border: 1px solid #2B3856;
+  transform: scale(1); /* 이미지 사이즈 고정 */
+  border-radius: 70%
   }
   
-  header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
-  }
-  
-  #container {
-    background-color: #fff;
-    padding: 2rem;
-    width: 80%;
-    margin: 2rem auto;
-  }
-  
-  h1 {
-    font-size: 1.5rem;
-  }
-  
-  h2 {
-    font-size: 1.3rem;
-  }
-  
-  p {
-    font-size: 1rem;
-  }
-  
-  img {
+  .menu-bar {
+    position: fixed;
+    border: 0;
+    background-color: #2B3856;
+    display: block;
     width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 50%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
-  ul {
-    list-style: none;
-    padding: 0;
+  .index {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  /* 목차 */
+  .index h3 {
+    color: white;
+    opacity: 0.7;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  /* 목차 각 항목 반응형 커서 */
+  .index h3:hover {
+    font-size: 1.1em;
+    opacity: 1;
+    text-shadow: 0.7px 0.7px 0.7px #000;
+  }
+  section {
+    margin-left: 260px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  p {
+    margin: 0;
   }
   
-  li {
-    margin-bottom: 10px;
-  }0
+  
+  /* ABOUT part*/
+  
+  .name {
+    font-size: 65px;
+    font-weight: 900;
+    font-family: 'Oswald', sans-serif;
+  }
+  .contacts {
+    font-size: 15px;
+    opacity: 0.5;
+    font-family: 'Roboto Mono', monospace;
+    font-style: italic;
+  }
+  .main-introduction {
+    font-size: 17px;
+    font-family: 'Noto Sans KR', sans-serif;
+    opacity: 0.8;
+  }
+  /* sns 픽토그램 */
+  .fa-brands {
+    color: black;
+    opacity: 0.4
+  }
+  .fa-solid {
+    color: black;
+    opacity: 0.4
+  }
+  .sns-pictogram i {
+    margin-right: 40px;
+  }
+  /*픽토그램 반응형 커서*/
+  footer i:hover {
+    transform: translate(0, -3px);
+  }
+  
+  
+  /* EXPERIENCE part */
+  
+  .experience img {
+    margin-right: 7px;
+    margin-top:10px;
+    border: 5px;
+    border-style: solid;
+    border-color: lightgray;
+    border-image-outset: 10px;
+    width: 120px;
+    height: 150px;
+    transition: all 0.3s ease-in-out;
+  }
+  /* 커서 올릴 시 이미지 크게(모든 이미지 파일에 적용) */
+  img:hover {
+    transform: scale(1.7);
+    -webkit-transform: scale(1.7); /* 크롬 */
+    -moz-transform: scale(1.7); /* 파이어폭스 */
+    -o-transform: scale(1.7); /* 오페라 */
+    z-index: 1;
+    align-items: center;
+  }
+  .experience p{
+    font-size: 55px;
+    font-weight: 700;
+    font-family: 'Oswald', sans-serif;
+  }
+  /* for layout */
+  .contents1 {
+    width: 700px;
+  }
+  .contents2 {
+    width: 700px;
+    margin-left: 120px;
+    margin-top: 30px;
+  }
+  /* 일한 기간 */
+  .year {
+    font-family: 'Oswald', sans-serif;
+    font-size: 17px;
+    opacity: 0.5;
+  }
+  
+  
+  
+  /* EDUCATION part */
+  .major {
+    font-size: 65px;
+    font-weight: 700;
+    margin-top:25px;
+    margin-bottom:25px;
+    font-family: 'Oswald', sans-serif;
+  }
+  .comments {
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    opacity: 0.6;
+  }
+  
+  /* INTERESTS part */
+  .whatilove-text {
+    font-size: 55px;
+    font-weight: 700;
+    font-family: 'Oswald', sans-serif;
+  }
+  .whatilove-img {
+    margin-bottom: 20px;
+  }
+  .whatilove-img img {
+    width:150px;
+    height: 150px;
+    transition: all 0.3s ease-in-out;
+  }
+  /* 하단 코멘트 */
+  .interests .comment {
+    font-size: 16px;
+    font-style: italic;
+  }

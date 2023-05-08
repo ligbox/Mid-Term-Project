@@ -1,30 +1,115 @@
+
 <!DOCTYPE html>
-<html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>32193483 이종혁 자기소개 홈페이지</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <h1></h1>
-  </header>
-  <div id="container">
-    <img src="your-profile-picture.jpg" alt="프로필 사진">
-    <h2>안녕하세요 단국대학교 소프트웨어학과 3학년 이종혁입니다.</h2>
-    <p>-자기소개할 내용들</p>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- CSS 파일 연결 -->
+    <link rel="stylesheet" href="style.css">
+    <!-- 폰트 연결-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300&family=Oswald:wght@500&family=Roboto+Mono:wght@200&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!-- js 파일 연결 -->
+    <title>About</title>
+  </head>
 
-    <h2>스킬 및 경험</h2>
-    <ul>
-      <li>스킬 1</li>
-      <li>스킬 2</li>
-      <li>스킬 3</li>
-    </ul>
 
-    <h2>연락처</h2>
-    <p>이메일: 32193483@dankook.ac.kr </p>
-    <p>전화번호: 비공개 </p>
-  </div>
-</body>
+  <body>
+    <header>
+    </header>
+      <nav class="menu-bar">
+        <div class = "index">
+          <!-- 프로필 이미지 -->
+          <div class = "img">
+            <img id="porfile-img" src ="images/profile_standard.jpeg">
+          </div>
+          <br>
+          <!-- 목차 내용 -->
+          <h3 class="click">ABOUT</h3>
+          <h3 class="click">EXPERIENCE</h3>
+          <h3 class="click">EDUCATION</h3>
+          <h3 class="click">INTERESTS</h3>
+        </div>
+      </nav>
+
+      <section class="about">
+        <!-- 이름 -->
+        <header class="name">
+          <p><span>JONG HYEOK</span>&nbsp<span style="color: #2B3856;">LEE</span></p>
+          <!-- 연락처 -->
+          <div class="contacts">
+            <p>🎂1998.07.03</p>
+            <p>📞-비공개-</p>
+            <p>📧-비공개-</p>
+          </div>
+        </header>
+        <br><br>
+        <!-- 소개글 -->
+        <article class="main-introduction">
+          <p>단국대학교 소프트웨어학과 3학년 이종혁입니다.<br>
+          이 페이지는 오픈소스 SW 과목 중간고사 대체 과제를 위해 만들어졌습니다.</p>
+          <br>
+          <p style="opacity: 1">스크롤을 내려주세요.</p>
+        </article>
+        <br><br>
+        <!-- SNS 픽토그램 -->
+        <footer class="sns-pictogram">
+          <a href='https://www.instagram.com/l_.hyk/'><i class="fa-brands fa-instagram fa-4x"></i></a>
+         
+        </footer>
+      </section>
+
+      <section class="experience">
+        <!-- 상단 텍스트 & 사진 -->
+        <div class="contents1">
+          <p class="title"><span>Hilton</span>&nbsp<span style="color: #2B3856;">Garden Inn</span>&nbsp<span class="year">~2021.12</span></p>
+          <img src="images/working.jpg">
+          <img src="images/IMG_6066.jpg">
+          <img src="images/IMG_9982.jpg">
+          <img src="images/IMG_3666.jpg">
+        </div>
+        <!-- 하단 텍스트 & 사진 -->
+        <div class="contents2">
+          <p class="title"><span>Alpensia</span>&nbsp<span style="color: #2B3856;">Pyeongchang</span>&nbsp<span class="year">~2020.11</p>
+          <img style="width: 150px;" class="photos" src="images/alpen.JPG">
+          <img src="images/IMG_9565.jpg">
+          <img src="images/sheep.jpeg">
+          <img src="images/IMG_9869.jpg">
+        </div>
+      </section>
+
+      <section class="education">
+        <!-- 전공 & 부전공 -->
+        <p class="major"><span>Tourism</span>&nbsp<span style="color: #2B3856;">Management</span>&nbsp<span class="comments">major</span></p>
+
+        <p class="major"><span>Food</span>&nbsp<span style="color: #2B3856;">Nuturition</span>&nbsp<span class="comments">minor</span></p>
+      </section>
+
+      <section class="interests">
+        <header>
+        <!-- 제목 -->
+        <p style="margin: 10px;" class="whatilove-text"><span>WHAT</span>&nbsp<span style="color: #2B3856;">I LOVE</span><p>
+        </header>
+        <article>
+          <!-- 이미지 -->
+          <div class="whatilove-img">
+            <img src="images/dumi1.jpg">
+            <img src="images/knitting.JPG">
+            <img src="images/dumibell.JPG">
+            <img src="images/bike.jpeg">
+            <img src="images/bell1.jpg">
+            <img src="images/dumi2.jpg">
+            <img src="images/piano.jpeg">
+            <img src="images/passport.jpg">
+            <img src="images/thread.JPG">
+            <img src="images/bell2.jpg">
+          </div>
+          <!-- 코멘트 -->
+          <p class="comment">Things that make me happy✨<br>
+          :knitting, bicycle riding on sunny days, playing the piano, traveling with no plans, and my only Dumi&Bell</p>
+        </article>
+      </section>
+      <script type="text/javascript" src="scroll.js"></script>
+  </body>
 </html>
