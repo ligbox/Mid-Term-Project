@@ -98,9 +98,9 @@ body {
   }
   
   
-  /* EXPERIENCE part */
+  /* SKILLS part */
   
-  .experience img {
+  .SKILLS img {
     margin-right: 7px;
     margin-top:10px;
     border: 5px;
@@ -120,7 +120,7 @@ body {
     z-index: 1;
     align-items: center;
   }
-  .experience p{
+  .SKILLS p{
     font-size: 55px;
     font-weight: 700;
     font-family: 'Oswald', sans-serif;
