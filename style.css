@@ -134,6 +134,15 @@ body {
     margin-left: 120px;
     margin-top: 30px;
   }
+  .contents3 {
+    width: 700px;
+  }
+  .contents3 img:hover {
+    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -o-transform: none;
+  }
   /* 일한 기간 */
   .year {
     font-family: 'Oswald', sans-serif;
