@@ -176,8 +176,8 @@ body {
     margin-bottom: 20px;
   }
   .whatilove-img img {
-    width:150px;
-    height: 150px;
+    width:350px;
+    height: 350px;
     transition: all 0.3s ease-in-out;
   }
   /* 하단 코멘트 */
