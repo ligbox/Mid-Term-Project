@@ -26,14 +26,14 @@
           </div>
           <br>
           <!-- 목차 내용 -->
-          <h3 class="click">ABOUT</h3>
-          <h3 class="click">SKILLS</h3>
-          <h3 class="click">EDUCATION</h3>
-          <h3 class="click">INTERESTS</h3>
+          <h3 class="click" data-target="about">ABOUT</h3>
+          <h3 class="click" data-target="skills">SKILLS</h3>
+          <h3 class="click" data-target="education">EDUCATION</h3>
+          <h3 class="click" data-target="interests">INTERESTS</h3>
         </div>
       </nav>
 
-      <section class="about">
+      <section class="about" id="about">
         <!-- 이름 -->
         <header class="name">
           <p><span>JONGHYEOK</span>&nbsp<span style="color: #2B3856;">LEE</span></p>
@@ -61,7 +61,7 @@
         </footer>
       </section>
 
-      <section class="SKILLS">
+      <section class="SKILLS" id="skills">
         <!-- 상단 텍스트 & 사진 -->
         <div class="contents1">
           <p class="title"><span style="color: #2B3856;">C, Python, SQL</span>&nbsp<span class="year">2019 ~ 2020</span></p>
@@ -81,7 +81,7 @@
         </div>
       </section>
 
-      <section class="education">
+      <section class="education" id="education">
         <!-- 전공 -->
         <p class="major"><span style="color: #2B3856;">단국대학교 소프트웨어학과 </span>&nbsp<span class="comments">전공</span></p>
         <div class="contents3">
@@ -91,7 +91,7 @@
 
       </section>
 
-      <section class="interests">
+      <section class="interests" id="interests">
         <header>
         <!-- 제목 -->
         <p style="margin: 10px;" class="whatilove-text"><span style="color: #2B3856;">관심사</span><p>
@@ -109,6 +109,21 @@
           돈 JONNA 벌어서 자유롭게 살고 싶읍니다..</p>
         </article>
       </section>
-      <script type="text/javascript" src="scroll.js"></script>
+      
+      <script type="text/javascript" src="scroll.js">
+        document.querySelectorAll('.click').forEach(function(item) {
+  item.addEventListener('click', function() {
+    const targetId = this.getAttribute('data-target');
+    const targetElement = document.getElementById(targetId);
+    window.scrollTo({
+      top: targetElement.offsetTop,
+      behavior: 'smooth'
+    });
+  });
+});
+
+      </script>
+
+
   </body>
 </html>
